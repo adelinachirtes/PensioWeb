@@ -137,3 +137,10 @@ p{
     background: rgb(226, 226, 226);
     border-radius: 8px;
 }
+
+
+/* contact */
+.contact-list{
+    line-height: 200%;
+    list-style: linear-gradient(#9c0ba1, #9c0ba1);
+}
