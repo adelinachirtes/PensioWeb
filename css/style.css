@@ -144,3 +144,84 @@ p{
     line-height: 200%;
     list-style: linear-gradient(#9c0ba1, #9c0ba1);
 }
+
+.map{
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    border-radius: 5px;
+    border: 2px solid rgb(156, 11, 161) !important;
+}
+
+.centered{
+    text-align: center;
+}
+
+.contact-form{
+    background-color: #c7cddd;
+    border-radius: 5px;
+    border: 2px solid rgb(156, 11, 161);
+    max-width: 480px;
+    padding: 5px 15px 30px 15px;
+}
+
+.contact-form input, .contact-form textarea{
+    display: block;
+    width: 90%;
+    margin:15px auto 0px auto;
+    resize: none;
+    font-family: inherit;
+    padding: 3px;
+    font-size: 16px;
+}
+
+#buton:hover{
+    background-color: rgb(156, 11, 161);
+}
+
+#menu-btn{
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    top: 23px;
+    right: 25px;
+    /* display: none; */
+}
+
+.show{
+    display: block !important;
+}
+
+@media (max-width: 768px){
+
+    body{
+        font-size: 16px;
+    }
+    
+    [class^="col-"] {
+        width: 100%;
+    }
+
+    main{
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding: 10px 15px 20px 15px;
+    }
+
+    aside{
+        display: none;
+        height: auto;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+
+    .gallery img{
+        width: 130px;
+        height: 130px;
+    }
+
+    #menu-btn{
+        display: block;
+    }
+}
