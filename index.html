@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>Pensiunea</title>
+</head>
+<body>
+    <header> 
+        <a href="index.html">
+            Casa Ionela
+        </a>
+        <!-- <i class="fas fa-ellipsis-h"></i> -->
+        <i id="menu-btn" class="fas fa-bars" onclick="show()"> </i>
+    </header>
+
+    <div class="page-container">
         
-        <title>Pensiunea</title>
-    </head>
-    <body>
-        <header> 
-            <a href="index.html">
-                Casa Ionela
-            </a>
-            <!-- <i class="fas fa-ellipsis-h"></i> -->
-            <i id="menu-btn" class="fas fa-bars" onclick="show()"> </i>
-        </header>
+        <aside id="side-menu">
+            <a href="index.html">Home</a>
+            <a href="pages/images.html">Imagini</a>
+            <a href="pages/evenimente.html">Evenimente</a>
+            <a href="pages/contact.html">Contact</a>
+            <a href="pages/regulament.html">Regulament</a>
+        </aside>
 
-        <div class="page-container">
+        <main>
+            <h2 class="title">Bine ați venit la Casa Ionela!</h2> 
+            <p>
+                Casa Ionela este situată la poalele munților Gurghiu, într-un peisaj de munte spectaculos. Încă de la prima vedere, veți fi cuceriți de frumusețea naturală a locului, unde brazii de diferite tipuri domină peisajul și oferă o atmosferă de poveste.
+            </p> 
+            <p>
+                Iarna, Casa Ionela se transformă într-un tărâm de poveste, cu un peisaj alb acoperit de zăpadă. Aceasta este perioada perfectă pentru activități de iarnă și pentru a vă bucura de un peisaj de basm, departe de agitația orașului.
+            </p>
+            <video muted autoplay loop src="resources/video.mp4"> </video>
+
+            <p>
+                Zona este extrem de liniștită, ideală pentru cei care caută să evadeze din agitația orașului și să se bucure de aerul curat și proaspăt de munte. În curtea noastră, veți găsi numeroși pomi, creând o oază de verdeață și liniște.
+            </p>
+            <p>
+                Copiii se vor bucura din plin de timpul petrecut la Casa Ionela, având ocazia să se joace cu iepurașii pe care îi avem în curte. Această experiență unică aduce zâmbete pe fețele celor mici și creează amintiri de neuitat.
+            </p>
+
             
-            <aside id="side-menu">
-                <a href="index.html">Home</a>
-                <a href="pages/images.html">Imagini</a>
-                <a href="pages/evenimente.html">Evenimente</a>
-                <a href="pages/contact.html">Contact</a>
-                <a href="pages/regulament.html">Regulament</a>
-            </aside>
+            <div class="gallery">
+                <a target="_blank" href="images/1.png">
+                    <img src="images/1.png" alt="Image 1">
+                </a>
+                <a target="_blank" href="images/2.png">
+                    <img src="images/2.png" alt="Image 2">
+                </a>
+                <a target="_blank" href="images/3.png">
+                    <img src="images/3.png" alt="Image 3">
+                </a>
+                <a target="_blank" href="images/4.png">
+                    <img src="images/4.png" alt="Image 4">
+                </a>
+            </div>
 
-            <main>
-                <h2 class="title">Home</h2> 
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod iste eos magni, voluptate excepturi officiis delectus voluptatum. Ipsam expedita eius dolorum, dolore facilis suscipit vitae delectus pariatur quidem maiores quo?
-                </p> 
+        </main>
 
-                <video muted autoplay loop src="resources/video"> </video>
+    </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nihil iure repudiandae rerum ea, magni sequi cum numquam tempore provident sunt, dicta quas exercitationem harum sapiente quaerat consectetur blanditiis inventore?</p>
-
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati quae reiciendis aspernatur beatae explicabo voluptas doloremque. Expedita sint exercitationem beatae in repellat laudantium, enim ea animi totam pariatur debitis rerum.</p>
-
-                <div class="gallery">
-                    <a target="_blank" href="images/1.png">
-                        <img src="images/1.png">
-                    </a>
-                    <a target="_blank" href="images/2.png">
-                        <img src="images/2.png">
-                    </a>
-                    <a target="_blank" href="images/3.png">
-                        <img src="images/3.png">
-                    </a>
-                    <a target="_blank" href="images/4.png">
-                        <img src="images/4.png">
-                    </a>
-                </div>
-
-            </main>
-
-        </div>
-
-        <script src="js/main.js"></script>
-    </body>
+    <script src="js/main.js"></script>
+</body>
 </html>
