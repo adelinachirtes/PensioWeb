@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background-color: rgb(203, 227, 250);
+    background-color: rgb(237, 250, 244);
     font-size: 18px;
     font-family: 'Noto Sans', 'sans-serif';
 }
@@ -13,7 +13,7 @@ body {
 header {
     height: 70px;
     /* background-color: #1d3a7e; */
-    background: linear-gradient(to right, #1d3a7e, #6e17c0);
+    background: linear-gradient(to right, #3b8f76, #72f3b2);
     position: fixed;
     width: 100%;
     padding-top: 20px;
@@ -40,7 +40,8 @@ aside{
     width: 190px;
     height: 100vh;
     position: fixed;
-    background: linear-gradient(to bottom, #1d3a7e, #6e17c0);
+    /* background: linear-gradient(to bottom, #1d3a7e, #6e17c0); */
+    background: linear-gradient(to bottom, #3b8f76, #72f3b2);
     padding-top: 10px;
     font-size: 20px;
 }
@@ -55,7 +56,7 @@ aside a{
 }
 
 .title{
-    border-bottom: 4px solid rgb(156, 11, 161);
+    border-bottom: 4px solid #72f3b2;
     margin-bottom: 5px;
     margin-top: 10px;
     display: inline-block;
@@ -63,7 +64,7 @@ aside a{
 
 p{
     line-height: 150%;
-    border-left: 6px solid rgb(156, 11, 161);
+    border-left: 6px solid #72f3b2;
     padding-left: 15px;
 }
 
@@ -120,7 +121,7 @@ p{
     padding: 0px 15px 15px 15px;
     background-color: rgb(230, 243, 255);
     border-radius: 5px;
-    border: 1px solid rgb(156, 11, 161);
+    border: 1px solid #72f3b2;
     height: 250px;
     overflow-y: scroll;
 }
@@ -142,7 +143,7 @@ p{
 /* contact */
 .contact-list{
     line-height: 200%;
-    list-style: linear-gradient(#9c0ba1, #9c0ba1);
+    list-style: linear-gradient(#72f3b2, #72f3b2);
 }
 
 .map{
@@ -150,7 +151,7 @@ p{
     max-width: 500px;
     height: 350px;
     border-radius: 5px;
-    border: 2px solid rgb(156, 11, 161) !important;
+    border: 2px solid #72f3b2 !important;
 }
 
 .centered{
@@ -158,9 +159,9 @@ p{
 }
 
 .contact-form{
-    background-color: #c7cddd;
+    background-color: #e0e7e0;
     border-radius: 5px;
-    border: 2px solid rgb(156, 11, 161);
+    border: 2px solid #72f3b2;
     max-width: 480px;
     padding: 5px 15px 30px 15px;
 }
@@ -176,7 +177,7 @@ p{
 }
 
 #buton:hover{
-    background-color: rgb(156, 11, 161);
+    background-color: #72f3b2;
 }
 
 #menu-btn{
@@ -224,4 +225,59 @@ p{
     #menu-btn{
         display: block;
     }
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.close, .prev, .next {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+}
+.close {
+    right: 25px;
+    top: 25px;
+}
+.prev {
+    left: 15px;
+}
+.next {
+    right: 15px;
+}
+
+
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
 }
