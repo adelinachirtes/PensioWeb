@@ -4,9 +4,10 @@
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
         <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         
-        <title>Pensiunea</title>
+        <title>Contact Casa Ionela</title>
     </head>
 
     <body>
@@ -61,23 +62,27 @@
                     </div>
 
                     <div class="col-50">
-                  
                         <div class="contact-form">
-                            <form>
+                            <form action="../php/send_email.php" method="POST">
                                 <h3 class="centered">Lasă un mesaj</h3>
-                                <input type="text" placeholder="Nume" required/>
-                                <input type="email" placeholder="Email" required/>
-                                <textarea rows="3" placeholder="Mesaj" required></textarea>
-                                <input type="submit" id="buton" valie="Transmite"/>
+                                <input type="text" name="name" placeholder="Nume" required/>
+                                <input type="email" name="email" placeholder="Email" required/>
+                                <textarea name="message" rows="3" placeholder="Mesaj" required></textarea>
+                                <input type="submit" id="buton" value="Transmite"/>
                             </form>
                         </div>
                     </div>
+                </div>
+
+                <div class="row">
+                    <div id="calendar" class="col-100"></div>
                 </div>
 
             </main>
 
         </div>
 
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
         <script src="../js/main.js"></script>
     </body>
 </html>

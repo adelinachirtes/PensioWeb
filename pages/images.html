@@ -1,83 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>Imagini Casa Ionela</title>
+</head>
+<body>
+    <header> 
+        <a href="../index.html">
+            Casa Ionela
+        </a>
+        <i id="menu-btn" class="fas fa-bars" onclick="show()"> </i>
+    </header>
+
+    <div class="page-container">
         
-        <title>Pensiunea</title>
-    </head>
+        <aside id="side-menu">
+            <a href="../index.html">Home</a>
+            <a href="images.html">Imagini</a>
+            <a href="evenimente.html">Evenimente</a>
+            <a href="contact.html">Contact</a>
+            <a href="regulament.html">Regulament</a>
+        </aside>
 
-    <body>
-        <header> 
-            <a href="../index.html">
-                Casa Ionela
-            </a>
-            <i id="menu-btn" class="fas fa-bars" onclick="show()"> </i>
-        </header>
+        <main>
+            <h2 class="title">Imagini</h2>  
 
-        <div class="page-container">
-            
-            <aside id="side-menu">
-                <a href="../index.html">Home</a>
-                <a href="images.html">Imagini</a>
-                <a href="evenimente.html">Evenimente</a>
-                <a href="contact.html">Contact</a>
-                <a href="regulament.html">Regulament</a>
-            </aside>
+            <div class="gallery">
+                <!-- Generate 30 images -->
+                <img src="../resources/1.jpeg" alt="Image 1">
+                <img src="../resources/2.jpeg" alt="Image 2">
+                <img src="../resources/3.jpeg" alt="Image 3">
+                <img src="../resources/4.jpeg" alt="Image 4">
+                <img src="../resources/5.jpeg" alt="Image 5">
+                <img src="../resources/6.jpeg" alt="Image 6">
+                <!-- <img src="../resources/7.jpeg" alt="Image 7"> -->
+                <img src="../resources/8.jpeg" alt="Image 8">
+                <img src="../resources/9.jpeg" alt="Image 9">
+                <img src="../resources/10.jpeg" alt="Image 10">
+                <img src="../resources/11.jpeg" alt="Image 11">
+                <img src="../resources/12.jpeg" alt="Image 12">
+                <img src="../resources/13.jpeg" alt="Image 13">
+                <img src="../resources/14.jpeg" alt="Image 14">
+                <img src="../resources/15.jpeg" alt="Image 15">
+                <img src="../resources/16.jpeg" alt="Image 16">
+                <img src="../resources/17.jpeg" alt="Image 17">
+                <img src="../resources/18.jpeg" alt="Image 18">
+                <img src="../resources/19.jpeg" alt="Image 19">
+                <img src="../resources/20.jpeg" alt="Image 20">
+                <img src="../resources/21.jpeg" alt="Image 21">
+                <img src="../resources/22.jpeg" alt="Image 22">
+                <img src="../resources/23.jpeg" alt="Image 23">
+                <img src="../resources/24.jpeg" alt="Image 24">
+                <img src="../resources/25.jpeg" alt="Image 25">
+                <img src="../resources/26.jpeg" alt="Image 26">
+                <img src="../resources/27.jpeg" alt="Image 27">
+                <img src="../resources/28.jpeg" alt="Image 28">
+                <!-- <img src="../resources/29.jpeg" alt="Image 29">
+                <img src="../resources/30.jpeg" alt="Image 30"> -->
+            </div>
 
-            <main>
-                <h2 class="title">Imagini</h2>  
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+                <img class="modal-content" id="img01">
+            </div>
+        </main>
+    </div>
 
-                <div class="row row-event">
-
-                    <div class="col-50">
-                        <div class="event">
-                            <h4>Titlu</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium illo, repellendus vitae ab esse nisi voluptate enim quis saepe sed labore vel, ratione odio! Quos commodi ab cum est.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-50">
-                        <div class="event">
-                            <h4>Titlu</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium illo, repellendus vitae ab esse nisi voluptate enim quis saepe sed labore vel, ratione odio! Quos commodi ab cum est.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium illo, repellendus vitae ab esse nisi voluptate enim quis saepe sed labore vel, ratione odio! Quos commodi ab cum est.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row row-event">
-
-                    <div class="col-50">
-                        <div class="event">
-                            <h4>Titlu</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium illo, repellendus vitae ab esse nisi voluptate enim quis saepe sed labore vel, ratione odio! Quos commodi ab cum est.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-50">
-                        <div class="event">
-                            <h4>Titlu</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium illo, repellendus vitae ab esse nisi voluptate enim quis saepe sed labore vel, ratione odio! Quos commodi ab cum est.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium illo, repellendus vitae ab esse nisi voluptate enim quis saepe sed labore vel, ratione odio! Quos commodi ab cum est.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </main>
-
-        </div>
-
-        <script src="../js/main.js"></script>
-    </body>
+    <script src="../js/main.js"></script>
+</body>
 </html>
