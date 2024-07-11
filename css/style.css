@@ -13,7 +13,7 @@ body {
 header {
     height: 70px;
     /* background-color: #1d3a7e; */
-    background: linear-gradient(to right, #3b8f76, #72f3b2);
+    background: linear-gradient(to right,#0d9488, #5eead4);
     position: fixed;
     width: 100%;
     padding-top: 20px;
@@ -41,7 +41,8 @@ aside{
     height: 100vh;
     position: fixed;
     /* background: linear-gradient(to bottom, #1d3a7e, #6e17c0); */
-    background: linear-gradient(to bottom, #3b8f76, #72f3b2);
+    /* background: linear-gradient(to bottom, #3b8f76, #72f3b2); */
+    background: linear-gradient(to bottom, #0d9488, #5eead4);
     padding-top: 10px;
     font-size: 20px;
 }
@@ -162,7 +163,8 @@ p{
     background-color: #e0e7e0;
     border-radius: 5px;
     border: 2px solid #72f3b2;
-    max-width: 480px;
+    max-width: 500px;
+    height: 350px;
     padding: 5px 15px 30px 15px;
 }
 
@@ -186,7 +188,7 @@ p{
     position: absolute;
     top: 23px;
     right: 25px;
-    /* display: none; */
+    display: none;
 }
 
 .show{

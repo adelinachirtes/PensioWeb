@@ -5,9 +5,43 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
         <link rel="stylesheet" type="text/css" href="../css/style.css"/>
         <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css"> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js"></script> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         
         <title>Contact Casa Ionela</title>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+            import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js";
+        
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyDqk1nLdLqzsFg3_W_iS6ODpprR0ZCbRkY",
+              authDomain: "pensioweb.firebaseapp.com",
+              projectId: "pensioweb",
+              storageBucket: "pensioweb.appspot.com",
+              messagingSenderId: "542268812244",
+              appId: "1:542268812244:web:368d845fabc412e7a50441",
+              measurementId: "G-13S94ERMNR"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const database = getDatabase(app);
+            console.log(database);
+            set(ref(database, "mesaje"), {
+                name: "1", email: "2", mesaj: "3"
+            }).then(result=>{console.log(result)}).catch(error=>{console.log(error)})
+            
+          </script>
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/firebase.js"></script>
     </head>
 
     <body>
@@ -48,8 +82,8 @@
                             <li><b>Adresa: </b> str. Uricea, nr. 6, comuna Hodac, jud. Mureș</li>
                             <li><b>Telefon: </b> 0744552211</li>
                             <li><b>Ore de contact: </b> 07<sup>00</sup> - 20<sup>00</sup></li>
-                            <li><b>Ora check-in: </b> 14:00</li>
-                            <li><b>Ora check-out:</b> 12:00</li>
+                            <li><b>Ora check-in: </b> 14<sup>00</sup></li>
+                            <li><b>Ora check-out:</b> 12<sup>00</sup></li>
                         </ul>
                     </div>
                 </div>
@@ -82,7 +116,7 @@
 
         </div>
 
-        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
-        <script src="../js/main.js"></script>
+        
+
     </body>
 </html>
